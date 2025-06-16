@@ -87,7 +87,7 @@ async def tarot(interaction: discord.Interaction, your_backstory: str):
     response = gemini_client.models.generate_content(
         model="gemini-2.0-flash",
         contents=f"""
-        Using the following username and backstory, draw three unique, random tarot cards for the user. Respond using text only, and keep each card's expanation, between one and three sentences, and also make them witty, etheral, mysterious, mythical, prophetic. Do not include any emojis.
+        Using the following username and backstory, draw three unique, random tarot cards for the user. Respond using text only, keep each card's explanation between one and three sentences, and make your responses etheral, mysterious, mythical, and prophetic. Do not include any emojis or miscellaneous formatting. Analyze the three cards that the user has drawn, and see how they may tell a story together, as two to four sentences. In a separate, following paragraph, provide the user with some lasting advice at the end of your response, as a sentence or two.
         
         Respond in the following format (example), and omit the hyphens:
         ---
@@ -97,6 +97,12 @@ async def tarot(interaction: discord.Interaction, your_backstory: str):
         (card description and explanation)
 
         **Card 2: (card name)**...
+
+        ...
+
+        **Your reading**
+
+        (final summary and response)
 
         ---
 

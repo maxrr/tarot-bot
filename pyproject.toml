@@ -1,6 +1,6 @@
 [project]
 name = "tarot-bot"
-version = "0.1.0"
+version = "0.1.1"
 description = "A silly bot for a Discord server that gives you tarot cards"
 readme = "README.md"
 requires-python = ">=3.13.5"
