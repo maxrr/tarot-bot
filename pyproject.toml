@@ -1,0 +1,11 @@
+[project]
+name = "tarot-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13.5"
+dependencies = [
+    "discord>=2.3.2",
+    "google-genai>=1.20.0",
+    "python-dotenv>=1.1.0",
+]
