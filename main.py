@@ -68,7 +68,7 @@ gemini_client = genai.Client(api_key=gemini_api_Key)
 
 # https://github.com/Rapptz/discord.py/blob/v2.5.2/examples/app_commands/basic.py
 @tree.command()
-async def pingie(interaction: discord.Interaction):
+async def ping(interaction: discord.Interaction):
     """Simple test command"""
     await interaction.response.send_message("Pong!")
 
